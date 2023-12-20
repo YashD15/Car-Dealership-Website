@@ -1,4 +1,4 @@
-//carousel
+//Carousel at home page
 var cars = ["Resources/ABC.jpg", "Resources/DEF.jpg", "Resources/GHI.jpg", "Resources/XYZ.jpg"];
 var i = 0;
 document.getElementById("cimg").src = cars[i];
