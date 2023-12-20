@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1024">
+<link rel="stylesheet" href="mystyle.css">
+<link rel="Website Icon" href="Resources/LM.png">
+<script src="myscript.js" type="text/javascript" charset="utf-8"></script>
+<title>Legendary MS - Enquiry</title>
+
+<body>
+    <!-- Top navigation -->
+    <div class="topnav">
+        <!-- Centered link -->
+        <div class="topnav-centered">
+            <a href="index.html">Home</a>
+        </div>
+
+        <!-- Left-aligned links (default) -->
+        <a href="cars_at_us.html">Cars At Us</a>
+        <a href="about.html">About</a>
+
+        <!-- Right-aligned links -->
+        <div class="topnav-right">
+            <a href="enquiry.html"  class="active">Enquiry</a>
+            <a href="contact_us.php">Contact Us</a>
+        </div>
+    </div>
+   <a href="" class="navlogo">
+    <img src="Resources/Logo.png" height="100vh"><h2 style="color: azure; font-size: 4em; border-bottom: none;">Enquiry</h2><img src="Resources/Logo.png" height="100vh">
+  </a>
+
+    <div>
+
+        <center><img src="Resources/Logo Home.png" width="50%"></center>
+        <div style="width:20cm ; border: 2px solid; margin: auto;">
+            <br>
+            <form name="myForm" action="enquiry_be.php" method="POST">
+                <center>
+                    <table>
+                        <tr>
+                            <td>Name: </td>
+                            <td style="width:70% ;">
+                                <select name="" id="" style="width:20.7% ;">
+                                    <option value="">Mr.</option>
+                                    <option value="">Mrs.</option>
+                                    <option value="">Dr.</option>
+                                </select> 
+                                <input type="text" name="fullname" placeholder="Your Name" style="width:74.7% ;" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Contact Number: </td>
+                            <td>
+                                <select name="" id="" style="width:20.7% ;">
+                                    <option value="">+91</option>
+                                    <option value="">+1</option>
+                                    <option value="">+44</option>
+                                    <option value="">+64</option>
+                                    <option value="">+971</option>
+                                </select> <input type="tel" name="cno" placeholder="96969*****" style="width:74.7% ;" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>E-Mail: </td>
+                            <td>
+                                <input type="email" name="email" placeholder="name.surname@example.com" style="width:96.5% ;" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>State: </td>
+                            <td>
+                                <select id="Country" name="state" size="1" style="width:96.5% ;" required>
+                                    <option value="" disabled selected selected="selected">-- Select State --</option>
+                                    <option value="Andhra Pradesh" id="s1">Andhra Pradesh</option>
+                                    <option value="Arunachal Pradesh" id="s2">Arunachal Pradesh</option>
+                                    <option value="Assam" id="s3">Assam</option>
+                                    <option value="Bihar" id="s4">Bihar</option>
+                                    <option value="Chhattisgarh" id="s5">Chhattisgarh</option>
+                                    <option value="Goa" id="s6">Goa</option>
+                                    <option value="Gujarat" id="s7">Gujarat</option>
+                                    <option value="Haryana" id="s8">Haryana</option>
+                                    <option value="Himachal Pradesh" id="s9">Himachal Pradesh</option>
+                                    <option value="Jammu & Kashmir" id="s10">Jammu & Kashmir</option>
+                                    <option value="Jharkhand" id="s11">Jharkhand</option>
+                                    <option value="Karnataka" id="s12">Karnataka</option>
+                                    <option value="Kerala" id="s13">Kerala</option>
+                                    <option value="Ladakh" id="s14">Ladakh</option>
+                                    <option value="Madhya Pradesh" id="s15">Madhya Pradesh</option>
+                                    <option value="Maharashtra" id="s16">Maharashtra</option>
+                                    <option value="Manipur" id="s17">Manipur</option>
+                                    <option value="Meghalaya" id="s18">Meghalaya</option>
+                                    <option value="Mizoram" id="s19">Mizoram</option>
+                                    <option value="Nagaland" id="s20">Nagaland</option>
+                                    <option value="Orissa" id="s21">Orissa</option>
+                                    <option value="Punjab" id="s22">Punjab</option>
+                                    <option value="Rajasthan" id="s23">Rajasthan</option>
+                                    <option value="Sikkim" id="s24">Sikkim</option>
+                                    <option value="Tamil Nadu" id="s25">Tamil Nadu</option>
+                                    <option value="Telangana" id="s26">Telangana</option>
+                                    <option value="Tripura" id="s27">Tripura</option>
+                                    <option value="Uttar Pradesh" id="s28">Uttar Pradesh</option>
+                                    <option value="Uttarakhand" id="s29">Uttarakhand</option>
+                                    <option value="West Bengal" id="s30">West Bengal</option>
+                                    <option value="Andaman & Nicobar" id="s31">Andaman & Nicobar Islands</option>
+                                    <option value="DDDNV" id="s32">Daman and Diu and Dadra and Nagar Haveli</option>
+                                    <option value="Lakshadweep" id="s33">Lakshadweep</option>
+                                    <option value="Puducherry" id="s34">Puducherry</option>
+                                    <option value="Delhi" id="s35">Delhi</option>
+                                    <option value="Chandigarh" id="s36">Chandigarh</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Enquiring for: </td>
+                            <td>
+                                <select id="City" name="enquirytype" size="1" style="width:96.5% ;" required>
+                                    <option value="" disabled selected selected="selected">-- Select Enquiry Type --</option>
+                                    <option value="Test Drive">Test Drive</option>
+                                    <option value="Pre-booking">Pre-booking</option>
+                                    <option value="Consultation">Consultation</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <center><input type="submit"/></center>
+                            </td>                         
+                        </tr>
+                    </table>
+                </center>
+            </form>
+            <br>
+        </div>
+        <br>
+    </div>
+
+    <footer class="footer">
+        <p>Copyright &#169 2022 Legendary Motorsport. All rights reserved.</p>
+    </footer>
+</body>
+</html>

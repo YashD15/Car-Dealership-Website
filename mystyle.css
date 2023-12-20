@@ -1,0 +1,399 @@
+/* Styles by - Yash Pravin Dhavde */
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Dosis', sans-serif;
+    background-color: whitesmoke;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  position: relative;
+  overflow: hidden;
+  background-color: #121212;
+}
+
+.topnav a {
+  float: left;
+  color: #f2ff00;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+  transition: all 0.4s ease;
+}
+
+.topnav a.active {
+  background-color: #3700B3;
+  color: white;
+  font-weight:bold;
+}
+
+.topnav-centered a {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.topnav-right {
+  float: right;
+}
+
+/* Responsive navigation menu (for mobile devices) */
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav-right {
+    float: none;
+    display: block;
+  }
+  
+  .topnav-centered a {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+}
+.navlogo{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: #181818;
+}
+.navlogo:hover{
+    transition: all 1s ease;
+    background-color: black;
+}
+
+/*Code for Footer*/
+.footer {
+    text-align: center;
+    margin: 0;
+    padding: 3px;
+    background-color: DarkSalmon;
+    color: white;
+    font-size: 1.5vw;
+}
+
+/*Image on home page*/
+.card_img {
+    display: block;
+    width: 100%;
+    flex: 0 0 60%;
+    position: relative;
+}
+
+/*Pegassi Cars*/
+.car-1{
+    background-image: url("Resources/Car5.jpg");  
+}
+.car-2{
+    background-image: url("Resources/Car9.jpg");
+}
+.car-3{
+    background-image: url("Resources/Car10.jpg");
+}
+.car-4{
+    background-image: url("Resources/Car11.jpg");
+}
+.car-5{
+    background-image: url("Resources/Car15.jpg");
+}
+
+/*Grotti Cars*/
+.car-6{
+    background-image: url("Resources/Car7.jpg");
+}
+.car-7{
+    background-image: url("Resources/Car8.jpg");
+}
+.car-8{
+    background-image: url("Resources/Car12.jpg");
+}
+.car-9{
+    background-image: url("Resources/Car17.jpg");
+}
+.car-10{
+    background-image: url("Resources/Car20.jpg");
+}
+
+/*Premium Cars*/
+.car-11{
+    background-image: url("Resources/Car1.jpg");
+}
+.car-12{
+    background-image: url("Resources/Car18.jpg");
+}
+.car-13{
+    background-image: url("Resources/Car19.jpg");
+}
+.car-39{
+    background-image: url("Resources/Car39.jpg");
+}
+.car-40{
+    background-image: url("Resources/Car40.jpg");
+}
+
+/*Progen Cars*/
+.car-14{
+    background-image: url("Resources/Car14.jpg");
+}
+.car-15{
+    background-image: url("Resources/Car21.jpg");
+}
+.car-16{
+    background-image: url("Resources/Car22.jpg");
+}
+.car-28{
+    background-image: url("Resources/Car28.jpg");
+}
+.car-29{
+    background-image: url("Resources/Car29.jpg");
+}
+
+/*Bravado Cars*/
+.car-17{
+    background-image: url("Resources/Car2.jpg");
+}
+.car-18{
+    background-image: url("Resources/Car4.jpg");
+}
+.car-33{
+    background-image: url("Resources/Car33.jpg");
+}
+.car-34{
+    background-image: url("Resources/Car34.jpg");
+}
+.car-35{
+    background-image: url("Resources/Car35.jpg");
+}
+
+/*Vapid Cars*/
+.car-19{
+    background-image: url("Resources/Car6.jpg");
+}
+.car-20{
+    background-image: url("Resources/Car13.jpg");
+}
+.car-30{
+    background-image: url("Resources/Car30.jpg");
+}
+.car-31{
+    background-image: url("Resources/Car31.jpg");
+}
+.car-32{
+    background-image: url("Resources/Car32.jpg");
+}
+
+/*Pfister Cars*/
+.car-21{
+    background-image: url("Resources/Car3.jpg");
+}
+.car-22{
+    background-image: url("Resources/Car23.jpg");
+}
+.car-36{
+    background-image: url("Resources/Car36.jpg");
+}
+.car-37{
+    background-image: url("Resources/Car37.jpg");
+}
+.car-38{
+    background-image: url("Resources/Car38.jpg");
+}
+
+/*Dinka Cars*/
+.car-23{
+    background-image: url("Resources/Car16.jpg");
+}
+.car-24{
+    background-image: url("Resources/Car24.jpg");
+}
+.car-25{
+    background-image: url("Resources/Car25.jpg");
+}
+.car-26{
+    background-image: url("Resources/Car26.jpg");
+}
+.car-27{
+    background-image: url("Resources/Car27.jpg");
+}
+
+/*All for Car cars at page Cars at us. A container holding cards and shifts it on new line if width is not consistent*/
+
+.container{
+    display: flex;
+    justify-self: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+/*Card of cars Display*/
+.cardcars{
+    background-color: #121212;
+    color: #FFFFFF;
+    width: 270px;
+    margin: 8px;
+    border-radius: 5px;
+}
+
+/*Image align of Cars*/
+.cardimg{
+    height: 150px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 5px;
+    border-end-end-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+.cardh1{
+    display: flex;
+    background-color: #121212;
+    color: #03DAC6;
+    border-radius: 50px; 
+    font-weight: bolder;
+    font-size: 3rem;
+    padding: 10px;
+    margin: 10px;
+    align-content: center;
+    justify-content: center;
+}
+.cardcars p, h2{
+    padding: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.cardcars a{
+    background-color: black;
+    color: white;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    margin: 20px;
+    text-decoration: none;
+}
+.cardcars:hover{
+    background-color: #BB86FC;
+    color: black;
+    transform: scale(1.03);
+    transition: all 0.5s ease;
+}
+.cardbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0D1117;
+    color: #C9D1D9;
+}
+
+/*About Page columns*/
+.column{
+    text-align: center;
+    float: left;
+    width: 40%;
+    padding-left: 20px;
+}
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#cdiv{
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    font-size: 5vw;
+    user-select: none;
+    cursor: pointer;
+    background-color: black;
+    color: #3A3B3C;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.bdiv:hover{
+    color: #0D1117;
+    background-color: #8B949E;
+}
+#cimg{
+    width: auto;
+    max-width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.bdiv{
+    width: 10%;
+    border-radius: 25px;
+}
+.black{
+    background-color: rgb(26, 26, 26);
+    color: rgb(205, 205, 205);
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.white{
+    background-color: rgb(220, 220, 220);
+    color: rgb(26, 26, 26);
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+  .dimage {
+    flex-basis: 40%
+  }
+  
+  .text {
+    font-size: 15px;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+
+
+
+
+/*Inputs styles*/
+input[type=text], select, input[type=email], input[type=tel], textarea
+{
+    font-size: 20px;
+    width: 100%;
+    padding: 10px 15px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus 
+{
+    background-color: lightblue;
+}
+button, input[type=submit], [type=reset]
+{
+    font-size: 20px;
+    background-color: whitesmoke;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover, input[type=submit]:hover, [type=reset]:hover
+{
+    background-color: lightblue;
+}  
