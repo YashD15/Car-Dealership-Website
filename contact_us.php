@@ -50,7 +50,7 @@
     <div style='width:20cm ; margin: auto; padding: 30px; margin-bottom: 20px; background-color: rgb(227, 227, 227); border-radius: 15px;'>
     <h2>Comments</h2><br>
     <?php
-    $conn = mysqli_connect('localhost','id19254013_legendary','luffY@10','id19254013_legendary');
+    $conn = mysqli_connect('localhost','root','','legendary');
     
     if(!$conn){
         die("Connection failed".mysqli_connect_error());

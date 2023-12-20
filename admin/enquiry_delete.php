@@ -6,9 +6,9 @@ if($test!="true") {
     header("Location:admin/login.php");
 }
 $servername = "localhost";
-$username = "id19254013_legendary";
-$password = "luffY@10";
-$dbname = "id19254013_legendary";
+$username = "root";
+$password = "";
+$dbname = "legendary";
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 
 if (!$conn) {
@@ -24,7 +24,7 @@ if (isset($_GET["id"])) {
   } else {
     echo "Error deleting record: " . mysqli_error($conn);
     exit();
-    header("Location: enquiry_db.php");
+    echo "<script>window.location.href='enquiry_db.php';</script>";
   }
 } else {
   echo "Invalid request";

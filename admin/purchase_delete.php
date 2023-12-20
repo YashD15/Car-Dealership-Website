@@ -6,9 +6,9 @@ if($test!="true") {
     header("Location:admin/login.php");
 }
 $servername = "localhost";
-$username = "id19254013_legendary";
-$password = "luffY@10";
-$dbname = "id19254013_legendary";
+$username = "root";
+$password = "";
+$dbname = "legendary";
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 
 if (!$conn) {
@@ -26,7 +26,7 @@ if (isset($_GET["id"])) {
   }
 } else {
   echo "Invalid request";
-  exit;
+  exit();
 }
 mysqli_close($conn);
 echo "<script>window.location.href='purchase_db.php'</script>";
