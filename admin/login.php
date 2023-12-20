@@ -42,7 +42,7 @@
 
 </head>
 <body>
-<a href="../projects.html" class="btn btn-primary" style="margin: 10px;">Back</a>
+<a href="../index.html" class="btn btn-primary" style="margin: 10px;">Back</a>
     <div class="container mt-5">
         <h1 class="text-center">Login Page (Admin Only)</h1><br><br><br>
         <form method="POST">
