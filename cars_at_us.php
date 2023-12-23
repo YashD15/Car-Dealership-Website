@@ -229,7 +229,7 @@
           echo '<p>Model: '  . $row["model"] . '</p>';
           echo '<p>Type: ' . $row["type"] .'</p>';
           echo '<p>Price: $'. $row["price"] .'</p>';
-          echo '<a href="purchase.html" class="cardbtn">Check Out</a>';
+          echo '<a href="demo.php?brand='.$row["brand"].'&model='.$row["model"].'" class="cardbtn">Check Out</a>';
           echo '</div>';
         }
     }
