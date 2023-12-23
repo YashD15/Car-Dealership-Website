@@ -14,7 +14,7 @@
     </div>
 
     <!-- Left-aligned links (default) -->
-    <a href="cars_at_us.html" class="active">Cars At Us</a>
+    <a href="cars_at_us.php" class="active">Cars At Us</a>
     <a href="about.html">About</a>
 
     <!-- Right-aligned links -->
