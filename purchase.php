@@ -3,22 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="Website Icon" href="Resources/LM.png">
   <title>Legendary MS - Purchase</title>
-  <style>
-    .color-select {
-      width: 100%;
-      padding: 0.375rem 0.75rem;
-      font-size: 1rem;
-      line-height: 1.5;
-      color: #495057;
-      background-color: #fff;
-      background-clip: padding-box;
-      border: 1px solid #ced4da;
-      border-radius: 0.25rem;
-      transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-    }
-  </style>
+
+  <!-- Bootstrap CSS-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> 
 </head>
 <body>
 
@@ -30,7 +19,7 @@
       <!-- Modal Header -->
       <div class="modal-header">
         <h5 class="modal-title">Purchase</h5>
-        <button onclick="window.location.href='demo.php'" type="button" class="close" data-dismiss="modal">&times;</button>
+        <button onclick="window.location.href='cars_at_us.php'" type="button" class="close" data-dismiss="modal">&times;</button>
       </div>
 
       <!-- Modal Body -->
@@ -101,7 +90,6 @@
   function changeColor(selectedColor) {
     document.getElementById('color').style.backgroundColor = selectedColor;
   }
-  
 </script>
 
 </body>

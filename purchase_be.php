@@ -19,7 +19,6 @@ $total = $price+$tax;
 $sql = "INSERT INTO purchase (fname, lname, contact, email, brand, carname, category, color, price,tax,total) VALUES ('$fname','$lname','$contact','$email','$brand','$carname','$category','$color','$price','$tax','$total')";
 
 if ($conn->query($sql) === TRUE) {
-    echo "<script>alert('New record created successfully');</script>";
     echo "<script>window.location.href='receipt.php';</script>";
     exit();
 } else {

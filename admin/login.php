@@ -10,22 +10,20 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
     
     <!-- Bootstrap JavaScript Libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js">
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"></script>
 
     <?php
     session_start();
     $_SESSION['test'] = 'false';
-    
+
     $mysqli = new mysqli("localhost", "root", "", "legendary");
 
     if (isset($_POST['submit'])) {
-        $user = mysqli_real_escape_string($mysqli, htmlentities($_POST['username']));
-        $pass = mysqli_real_escape_string($mysqli, htmlentities($_POST['password']));
+        $username = mysqli_real_escape_string($mysqli, htmlentities($_POST['username']));
+        $password = mysqli_real_escape_string($mysqli, htmlentities($_POST['password']));
 
-        $sql = "SELECT * FROM `login` WHERE `username`='$user' AND `password`='$pass'";
+        $sql = "SELECT * FROM `login` WHERE `username`='$username' AND `password`='$password'";
 
         $result = $mysqli->query($sql);
 

@@ -21,6 +21,12 @@ function next()
   i++;
 }
 
+
+
+
+
+
+
 //Select dropdown
 function validate() {
   return (vname() && vcontact() && vemail());
@@ -58,11 +64,6 @@ function vcontact() {
 }
 function vemail(){
   var x = document.forms["myForm"]["email"].value;
-  // if (x == "") {
-  //   alert("Enter a valid email id");
-  //   return false;
-  // }
-  // return validate_email(x);
   if (x == "") {
     alert("Enter your email id");
   } else {
@@ -99,142 +100,7 @@ function sub()
     alert("Your pre-booking has been successfully registered, our team will shortly contact you regarding more details and paperwork. Thank You!");
   }
 }
-function modifyList(x)
-{
-    with(document.forms.myForm)
-    {
-        if(x == 1)
-        {
-            optionList[1].text="Ignus";
-            optionList[1].value=1;
-            optionList[2].text="Nero";
-            optionList[2].value=2;
-            optionList[3].text="Thrax";
-            optionList[3].value=3;
-            optionList[4].text="Champion";
-            optionList[4].value=4;
-            optionList[5].text="Zeno";
-            optionList[5].value=5;
-        }
-        if(x == 2)
-        {
-            optionList[1].text="Infernus";
-            optionList[1].value=1;
-            optionList[2].text="Vacca";
-            optionList[2].value=2;
-            optionList[3].text="Zentorno";
-            optionList[3].value=3;
-            optionList[4].text="Monroe";
-            optionList[4].value=4;
-            optionList[5].text="Osiris";
-            optionList[5].value=5;
-        }
-        if(x == 3)
-        {
-            optionList[1].text="Stinger";
-            optionList[1].value=1;
-            optionList[2].text="Turismo R";
-            optionList[2].value=2;
-            optionList[3].text="Cheetah";
-            optionList[3].value=3;
-            optionList[4].text="Carbonizzare";
-            optionList[4].value=4;
-            optionList[5].text="Furia";
-            optionList[5].value=5;
-        }
-        if(x == 4)
-        {
-            optionList[1].text="T20";
-            optionList[1].value=1;
-            optionList[2].text="Emerus";
-            optionList[2].value=2;
-            optionList[3].text="GP1";
-            optionList[3].value=3;
-            optionList[4].text="Italia GTB";
-            optionList[4].value=4;
-            optionList[5].text="Tyrus";
-            optionList[5].value=5;
-        }
-        if(x == 5)
-        {
-            optionList[1].text="Banshee";
-            optionList[1].value=1;
-            optionList[2].text="Gauntlet";
-            optionList[2].value=2;
-            optionList[3].text="Buffalo";
-            optionList[3].value=3;
-            optionList[4].text="G Hellfire";
-            optionList[4].value=4;
-            optionList[5].text="Verlierer";
-            optionList[5].value=5;
-        }
-        if(x == 6)
-        {
-            optionList[1].text="Stallion";
-            optionList[1].value=1;
-            optionList[2].text="Bullet";
-            optionList[2].value=2;
-            optionList[3].text="Dominator";
-            optionList[3].value=3;
-            optionList[4].text="FMJ";
-            optionList[4].value=4;
-            optionList[5].text="Flash GT";
-            optionList[5].value=5;
-        }
-        if(x == 7)
-        {
-            optionList[1].text="Comet";
-            optionList[1].value=1;
-            optionList[2].text="Growler";
-            optionList[2].value=2;
-            optionList[3].text="Astron";
-            optionList[3].value=3;
-            optionList[4].text="811";
-            optionList[4].value=4;
-            optionList[5].text="Neon";
-            optionList[5].value=5;
-        }
-        if(x == 8)
-        {
-            optionList[1].text="Jester";
-            optionList[1].value=1;
-            optionList[2].text="Jester RR";
-            optionList[2].value=2;
-            optionList[3].text="Jester Classic";
-            optionList[3].value=3;
-            optionList[4].text="Sugoi";
-            optionList[4].value=4;
-            optionList[5].text="RT3000";
-            optionList[5].value=5;
-        }
-    }
-}
-function color(x)
-{
-    with(document.forms.myForm)
-    {
-        if(x == "Red")
-        {
-            document.getElementById("clr").style.backgroundColor="red";
-        }
-        if(x == "Blue")
-        {
-            document.getElementById("clr").style.backgroundColor="dodgerblue";
-        }
-        if(x == "Green")
-        {
-            document.getElementById("clr").style.backgroundColor="mediumseagreen";
-        }
-        if(x == "Violet")
-        {
-            document.getElementById("clr").style.backgroundColor="slateblue";
-        }
-        if(x == "Yellow")
-        {
-            document.getElementById("clr").style.backgroundColor="gold";
-        }
-    }
-}
+
 
 //Contact us submit handling
 function valcon()
