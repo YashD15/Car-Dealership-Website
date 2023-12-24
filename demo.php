@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <title>Bootstrap Modal Example</title>
+  <title>Legendary MS - Purchase</title>
   <style>
     .color-select {
       width: 100%;
@@ -22,6 +22,9 @@
 </head>
 <body>
 
+
+
+
 <!-- The Modal -->
 <div class="modal" id="myModal">
   <div class="modal-dialog">
@@ -29,18 +32,18 @@
 
       <!-- Modal Header -->
       <div class="modal-header">
-        <h4 class="modal-title">Modal Heading Level 1</h4>
-        <h5 class="modal-title">Modal Heading Level 2</h5>
+        <h5 class="modal-title">Purchase</h5>
         <button type="button" class="close" data-dismiss="modal">&times;</button>
       </div>
 
       <!-- Modal Body -->
       <div class="modal-body">
         <!-- Form -->
-        <form>
+        <form method="POST" action="purchase_be.php">
           <div class="form-group">
             <label for="name">Name:</label>
-            <input type="text" class="form-control" id="name" name="name">
+            <input type="text" class="form-control" id="fname" name="fname" placeholder="FirstName">
+            <input type="text" class="form-control" id="lname" name="lname" placeholder="LastName">
           </div>
           <div class="form-group">
             <label for="contact">Contact No.:</label>
@@ -51,32 +54,31 @@
             <input type="email" class="form-control" id="email" name="email">
           </div>
           <div class="form-group">
-            <label for="brand">Brand:</label>
+            <label for="car">Brand:</label>
             <input type="text" class="form-control" id="brand" name="brand" disabled>
+            <input type="hidden" class="form-control" id="category" name="category" disabled>
+            <input type="hidden" class="form-control" id="price" name="price" disabled>
           </div>
           <div class="form-group">
-            <label for="model">Model:</label>
-            <input type="text" class="form-control" id="model" name="model" disabled>
+            <label for="model">Name:</label>
+            <input type="text" class="form-control" id="carname" name="carname" disabled>
           </div>
           <div class="form-group">
             <label for="color">Color:</label>
             <select class="form-control color-select" id="color" name="color" onchange="changeColor(this.value)">
               <option value="" disabled selected>Select a color</option>
-              <option value="red">Red</option>
-              <option value="green">Green</option>
-              <option value="blue">Blue</option>
-              <!-- Add more color options as needed -->
+              <option value="DodgerBlue">Blue</option>
+              <option value="Gold">Yellow</option>
+              <option value="DarkOrange">Orange</option>
+              <option value="LawnGreen">Green</option>
             </select>
+          </div>
+          <!-- Modal Footer -->
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary">Submit</button>
           </div>
         </form>
       </div>
-
-      <!-- Modal Footer -->
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save Changes</button>
-      </div>
-
     </div>
   </div>
 </div>
@@ -86,23 +88,17 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-<!-- Button to trigger the modal -->
-<button type="button" class="btn btn-primary" id="openModalButton">
-  Open Modal
-</button>
-
 <script>
-  document.getElementById('openModalButton').addEventListener('click', function() {
+  document.addEventListener('DOMContentLoaded', function () {
     // Extract parameters from the URL
     var urlParams = new URLSearchParams(window.location.search);
-    
-    // Get the values of brand and model from the URL
-    var fetchedBrand = urlParams.get('brand');
-    var fetchedModel = urlParams.get('model');
 
     // Set the fetched data to the modal fields
-    document.getElementById('brand').value = fetchedBrand;
-    document.getElementById('model').value = fetchedModel;
+    document.getElementById('brand').value = urlParams.get('brand');
+    document.getElementById('carname').value = urlParams.get('carname');
+    document.getElementById('category').value = urlParams.get('category');
+    document.getElementById('price').value = urlParams.get('price');
+
 
     // Open the modal
     $('#myModal').modal('show');
@@ -112,6 +108,8 @@
   function changeColor(selectedColor) {
     document.getElementById('color').style.backgroundColor = selectedColor;
   }
+
+    
 </script>
 
 

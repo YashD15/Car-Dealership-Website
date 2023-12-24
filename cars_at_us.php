@@ -22,10 +22,12 @@
       <a href="enquiry.html">Enquiry</a>
       <a href="contact_us.php">Contact Us</a>
     </div>
-
   </div>
+
   <a href="" class="navlogo">
-    <img src="Resources/Logo.png" height="100vh"><img src="Resources/Logo Home.png" height="100vh"><img src="Resources/Logo.png" height="100vh">
+    <img src="Resources/Logo.png" height="100vh">
+    <img src="Resources/Logo Home.png" height="100vh">
+    <img src="Resources/Logo.png" height="100vh">
   </a>
 
   <h1 class="cardh1"> Pegassi </h1>
@@ -202,7 +204,7 @@
           echo '<p>Model: '  . $row["model"] . '</p>';
           echo '<p>Type: ' . $row["type"] .'</p>';
           echo '<p>Price: $'. $row["price"] .'</p>';
-          echo '<a href="purchase.html" class="cardbtn">Check Out</a>';
+          echo '<a href="demo.php?brand='.$row["brand"].'&carname='.$row["name"].'&category='.$row["category"].'" class="cardbtn">Check Out</a>';
           echo '</div>';
         }
     }
@@ -229,7 +231,7 @@
           echo '<p>Model: '  . $row["model"] . '</p>';
           echo '<p>Type: ' . $row["type"] .'</p>';
           echo '<p>Price: $'. $row["price"] .'</p>';
-          echo '<a href="demo.php?brand='.$row["brand"].'&model='.$row["model"].'" class="cardbtn">Check Out</a>';
+          echo '<a href="demo.php?brand='.$row["brand"].'&carname='.$row["name"].'&category='.$row["category"].'&price='.$row["price"].'" class="cardbtn">Check Out</a>';
           echo '</div>';
         }
     }
