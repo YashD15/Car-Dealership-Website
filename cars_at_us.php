@@ -48,7 +48,7 @@
           echo '<p>Model: '  . $row["model"] . '</p>';
           echo '<p>Type: ' . $row["type"] .'</p>';
           echo '<p>Price: $'. $row["price"] .'</p>';
-          echo '<a href="purchase.html" class="cardbtn">Check Out</a>';
+          echo '<a href="demo.php?brand='.$row["brand"].'&carname='.$row["name"].'&price='.$row["price"].'&category='.$row["category"].'" class="cardbtn">Purchase</a>';
           echo '</div>';
         }
     }
@@ -74,7 +74,7 @@
           echo '<p>Model: '  . $row["model"] . '</p>';
           echo '<p>Type: ' . $row["type"] .'</p>';
           echo '<p>Price: $'. $row["price"] .'</p>';
-          echo '<a href="purchase.html" class="cardbtn">Check Out</a>';
+          echo '<a href="demo.php?brand='.$row["brand"].'&carname='.$row["name"].'&price='.$row["price"].'&category='.$row["category"].'" class="cardbtn">Purchase</a>';
           echo '</div>';
         }
     }
@@ -100,7 +100,7 @@
           echo '<p>Model: '  . $row["model"] . '</p>';
           echo '<p>Type: ' . $row["type"] .'</p>';
           echo '<p>Price: $'. $row["price"] .'</p>';
-          echo '<a href="purchase.html" class="cardbtn">Check Out</a>';
+          echo '<a href="demo.php?brand='.$row["brand"].'&carname='.$row["name"].'&price='.$row["price"].'&category='.$row["category"].'" class="cardbtn">Purchase</a>';
           echo '</div>';
         }
     }
@@ -126,7 +126,7 @@
           echo '<p>Model: '  . $row["model"] . '</p>';
           echo '<p>Type: ' . $row["type"] .'</p>';
           echo '<p>Price: $'. $row["price"] .'</p>';
-          echo '<a href="purchase.html" class="cardbtn">Check Out</a>';
+          echo '<a href="demo.php?brand='.$row["brand"].'&carname='.$row["name"].'&price='.$row["price"].'&category='.$row["category"].'" class="cardbtn">Purchase</a>';
           echo '</div>';
         }
     }
@@ -152,7 +152,7 @@
           echo '<p>Model: '  . $row["model"] . '</p>';
           echo '<p>Type: ' . $row["type"] .'</p>';
           echo '<p>Price: $'. $row["price"] .'</p>';
-          echo '<a href="purchase.html" class="cardbtn">Check Out</a>';
+          echo '<a href="demo.php?brand='.$row["brand"].'&carname='.$row["name"].'&price='.$row["price"].'&category='.$row["category"].'" class="cardbtn">Purchase</a>';
           echo '</div>';
         }
     }
@@ -178,7 +178,7 @@
           echo '<p>Model: '  . $row["model"] . '</p>';
           echo '<p>Type: ' . $row["type"] .'</p>';
           echo '<p>Price: $'. $row["price"] .'</p>';
-          echo '<a href="purchase.html" class="cardbtn">Check Out</a>';
+          echo '<a href="demo.php?brand='.$row["brand"].'&carname='.$row["name"].'&price='.$row["price"].'&category='.$row["category"].'" class="cardbtn">Purchase</a>';
           echo '</div>';
         }
     }
@@ -204,7 +204,7 @@
           echo '<p>Model: '  . $row["model"] . '</p>';
           echo '<p>Type: ' . $row["type"] .'</p>';
           echo '<p>Price: $'. $row["price"] .'</p>';
-          echo '<a href="demo.php?brand='.$row["brand"].'&carname='.$row["name"].'&category='.$row["category"].'" class="cardbtn">Check Out</a>';
+          echo '<a href="demo.php?brand='.$row["brand"].'&carname='.$row["name"].'&price='.$row["price"].'&category='.$row["category"].'" class="cardbtn">Purchase</a>';
           echo '</div>';
         }
     }
@@ -231,7 +231,7 @@
           echo '<p>Model: '  . $row["model"] . '</p>';
           echo '<p>Type: ' . $row["type"] .'</p>';
           echo '<p>Price: $'. $row["price"] .'</p>';
-          echo '<a href="demo.php?brand='.$row["brand"].'&carname='.$row["name"].'&category='.$row["category"].'&price='.$row["price"].'" class="cardbtn">Check Out</a>';
+          echo '<a href="demo.php?brand='.$row["brand"].'&carname='.$row["name"].'&price='.$row["price"].'&category='.$row["category"].'" class="cardbtn">Purchase</a>';
           echo '</div>';
         }
     }

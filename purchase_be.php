@@ -1,10 +1,5 @@
 <?php
-$host = "localhost";
-$username = "root";
-$password = "";
-$dbname = "legendary";
-
-$conn = new mysqli($host, $username, $password, $dbname);
+$conn = new mysqli("localhost", "root", "", "legendary");
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
@@ -18,19 +13,19 @@ $carname = $_POST['carname'];
 $category = $_POST['category'];
 $color = $_POST['color'];
 $price = $_POST['price'];
+$tax = 0.28 * $price;
+$total = $price+$tax;
 
-
-// Insert data into table
-$sql = "INSERT INTO purchase (fname, lname, contact, email, brand, carname, category, color, price) VALUES ('$fname','$lname','$contact','$email','$brand','$carname','$category','$color','$price')";
+$sql = "INSERT INTO purchase (fname, lname, contact, email, brand, carname, category, color, price,tax,total) VALUES ('$fname','$lname','$contact','$email','$brand','$carname','$category','$color','$price','$tax','$total')";
 
 if ($conn->query($sql) === TRUE) {
     echo "<script>alert('New record created successfully');</script>";
-    // echo "<script>window.location.href='cars_at_us.php';</script>";
+    echo "<script>window.location.href='cars_at_us.php';</script>";
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
 $conn->close();
 exit();
-// echo "<script>window.location.href='cars_at_us.php';</script>";
+echo "<script>window.location.href='cars_at_us.php';</script>";
 ?>

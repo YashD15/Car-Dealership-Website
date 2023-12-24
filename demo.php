@@ -22,9 +22,6 @@
 </head>
 <body>
 
-
-
-
 <!-- The Modal -->
 <div class="modal" id="myModal">
   <div class="modal-dialog">
@@ -55,13 +52,13 @@
           </div>
           <div class="form-group">
             <label for="car">Brand:</label>
-            <input type="text" class="form-control" id="brand" name="brand" disabled>
-            <input type="hidden" class="form-control" id="category" name="category" disabled>
-            <input type="hidden" class="form-control" id="price" name="price" disabled>
+            <input type="text" class="form-control" id="brand" name="brand" readonly>
+            <input type="hidden" class="form-control" id="category" name="category" readonly>
+            <input type="hidden" class="form-control" id="price" name="price" readonly>
           </div>
           <div class="form-group">
             <label for="model">Name:</label>
-            <input type="text" class="form-control" id="carname" name="carname" disabled>
+            <input type="text" class="form-control" id="carname" name="carname" readonly>
           </div>
           <div class="form-group">
             <label for="color">Color:</label>
@@ -89,30 +86,22 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    // Extract parameters from the URL
-    var urlParams = new URLSearchParams(window.location.search);
+  // Extract parameters from the URL
+  var urlParams = new URLSearchParams(window.location.search);
+  // Set the fetched data to the modal fields
+  console.log(document.getElementById('brand').value = urlParams.get('brand'));
+  console.log(document.getElementById('carname').value = urlParams.get('carname'));
+  console.log(document.getElementById('category').value = urlParams.get('category'));
+  console.log(document.getElementById('price').value = urlParams.get('price'));
 
-    // Set the fetched data to the modal fields
-    document.getElementById('brand').value = urlParams.get('brand');
-    document.getElementById('carname').value = urlParams.get('carname');
-    document.getElementById('category').value = urlParams.get('category');
-    document.getElementById('price').value = urlParams.get('price');
-
-
-    // Open the modal
-    $('#myModal').modal('show');
-  });
+  // Open the modal
+  $('#myModal').modal('show');
 
   // JavaScript function to change the background color of the select tag
   function changeColor(selectedColor) {
     document.getElementById('color').style.backgroundColor = selectedColor;
   }
-
-    
+  
 </script>
-
-
-
 </body>
 </html>
