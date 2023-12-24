@@ -36,7 +36,7 @@
       <!-- Modal Body -->
       <div class="modal-body">
         <!-- Form -->
-        <form method="POST" action="cars_at_us.php">
+        <form method="POST" action="purchase_be.php">
           <div class="form-group">
             <label for="name">Name:</label>
             <input type="text" class="form-control" id="fname" name="fname" placeholder="FirstName">
@@ -103,5 +103,6 @@
   }
   
 </script>
+
 </body>
 </html>

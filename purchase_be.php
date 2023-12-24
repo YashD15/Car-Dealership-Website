@@ -21,6 +21,7 @@ $sql = "INSERT INTO purchase (fname, lname, contact, email, brand, carname, cate
 if ($conn->query($sql) === TRUE) {
     echo "<script>alert('New record created successfully');</script>";
     echo "<script>window.location.href='receipt.php';</script>";
+    exit();
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
