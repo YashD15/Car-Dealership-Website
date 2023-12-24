@@ -20,12 +20,12 @@ $sql = "INSERT INTO purchase (fname, lname, contact, email, brand, carname, cate
 
 if ($conn->query($sql) === TRUE) {
     echo "<script>alert('New record created successfully');</script>";
-    echo "<script>window.location.href='cars_at_us.php';</script>";
+    echo "<script>window.location.href='receipt.php';</script>";
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
 $conn->close();
 exit();
-echo "<script>window.location.href='cars_at_us.php';</script>";
+echo "<script>window.location.href='receipt.php';</script>";
 ?>
