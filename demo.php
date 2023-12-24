@@ -30,7 +30,7 @@
       <!-- Modal Header -->
       <div class="modal-header">
         <h5 class="modal-title">Purchase</h5>
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <button onclick="window.location.href='cars_at_us.php'" type="button" class="close" data-dismiss="modal">&times;</button>
       </div>
 
       <!-- Modal Body -->
